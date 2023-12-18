@@ -1,10 +1,81 @@
-/* *{
+*{
     margin: 0;
     padding: 0;
     border-style: border-box;
+    /* border: 1px solid red; */
+    background-color: #e6e6e6;
 }
 
-h1 {
-    color: red;
-    background-color: darkgoldenrod;;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading {
+    margin: 1rem 0;
+    font-family: Helvetica, sans-serif, Arial;
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #111111;
+}
+.sub-heading {
+    margin: 1rem 0;
+    font-family: sans-serif, Arial;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: #191919;
+    /* justify-content: center; */
+}
+.tech-icons {
+    margin: 1rem 0;
+}
+.code-icon{
+    font-size: 3rem;
+}
+.project-items-wrapper {
+    width: 100%;
+}
+.project-lists {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2rem;
+}
+.project-box {
+    width: 75%;
+    margin: 1rem 0;
+    background-color: #000000;
+    color: #d7d7d7;
+    padding: 1.2rem;
+    border-radius: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    background-color: #000000;
+    color: #d7d7d7;
+    width: 100%;
+    height: 60px;
+}
+/* 
+footer a {
+    padding: 0 0.85rem;
+    background-color: #000000;
+
 } */
