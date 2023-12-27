@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+    font-family:  sans-serif;
+}
+
+/* body{
+    display: flex;
+    justify-content: center;
+} */
+#day_el{
+    margin-bottom: 1.5rem;
+    letter-spacing: 3px;
+    font-size: 1.25rem;
+    color: #f1f1f1;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.date_wrap{
+    display: flex;
+    gap: .85rem;
+}
+.box {
+    background-color: #797979;
+    padding: 1.5rem;
+    color: #f1f1f1;
+    border-radius: 6px;
+    font-size: 1.1rem;
+}
+
+.ddmmyyyy {
+    margin-top: 1.25rem;
+    color: #cfc5c5;
+    font-size: .55rem;
+    letter-spacing: 5px;
+
+}
