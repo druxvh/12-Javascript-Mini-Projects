@@ -12,6 +12,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   gap: 2px;
   background-color: #191919;
   height: 400px;
@@ -24,4 +25,6 @@ body {
     font-family: cursive;
     font-size: 3rem;
     color: #2b2929;
+    background-color: #f0f0f0;
+    /* background: none; */
 }
