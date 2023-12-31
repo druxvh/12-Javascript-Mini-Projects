@@ -16,11 +16,40 @@ const winnerPatterns = [
   [2, 4, 6],
 ];
 
-//reloads the page
-const reload = () => {
-  location.reload();
-};
+// //reloads the page
+// const reload = () => {
+//   location.reload();
+// };
+const newGame = () => {
+  player1 = true
+  winnerMsgContainer.classList.add("hide");
+  gameContainer.classList.remove("hide");
+  enableBox()
+}
+const reset = () => {
+  player1 = true
+  for(let box of boxes){
+    box.textContent = ""
+  }
+}
 
+const enableBox = () =>{
+  for(let box of boxes){
+    box.disabled = false
+    box.textContent = ""
+  }
+}
+const disableBox = () =>{
+  for(let box of boxes){
+    box.disabled = true
+  }
+}
+
+const draw = () =>{
+  winnerMsgContainer.classList.remove("hide");
+  gameContainer.classList.add("hide");
+  winnerMsg.textContent = `DRAW!`;
+}
 function showWinner(winner) {
   winnerMsgContainer.classList.remove("hide");
   gameContainer.classList.add("hide");
@@ -41,7 +70,7 @@ function showWinner(winner) {
         player1 = true;
       }
       //disables each box to prevent overwrite
-      box.disabled = true;
+      box.disable = true
 
       //check winning possibilties
       checkWinner();
@@ -57,15 +86,26 @@ const checkWinner = () => {
     let pos3 = boxes[pattern[2]].textContent;
     if (pos1 != "" && pos2 != "" && pos3 != "") {
       if (pos1 === pos2 && pos2 === pos3) {
-        if (pos1 === "O") {
-          showWinner("Player 1");
-        } else {
-          showWinner("Player 2");
+
+        switch (true) {
+          case (pos1 === "O"):
+            showWinner("Player 1");
+            break;
+          case (pos2 === "X"):
+            showWinner("Player 2");
+            break;
+          default:
+            draw()
+            break;
         }
+        if((pos1 && pos2 && pos3) != winnerPatterns && boxes != ''){
+          draw()
+        }
+        disableBox()
       }
-    }
-  }
+    } 
+  } 
 };
 
-newGameBtn.addEventListener("click", reload);
-resetBtn.addEventListener("click", reload);
+newGameBtn.addEventListener("click", newGame);
+resetBtn.addEventListener("click", reset);
