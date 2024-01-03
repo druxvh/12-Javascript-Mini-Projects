@@ -22,3 +22,4 @@ const generateJoke = async () => {
 
 }
 jokeBtn.addEventListener("click", generateJoke)
+
