@@ -8,7 +8,7 @@
     background-color: #1900a6;
 } */
 .container{
-    height: 100vh;
+    height: 100dvh;
     background-color: #1900a6;
     display: flex;
     align-items: center;
@@ -23,27 +23,28 @@ p {
     font-weight: 800;
 }
 
-.wrap {
+/* .wrap {
     width: 80%;
     height: 100%;
     background-color: #202020;
     padding: 1rem;
     border-radius: 25px 25px 0 0;
-}
+} */
 
 #text-box {
-    width: 100%;
+    width: 80%;
     height: 100%;
-    max-height: fit-content;
+    padding: 1rem;
+    border-radius: 24px 24px 0 0;
     border: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     line-height: 150%;
-    scroll-behavior: smooth;
     outline: none;
     resize: none;
     background-color: #202020;
     color: #f1f1f1;
+    
 }
 
 #text-box::placeholder {
