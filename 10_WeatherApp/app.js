@@ -6,6 +6,7 @@ const tempNow = document.querySelector(".temp");
 const feelsLike = document.querySelector(".feels-like");
 const humidityData = document.querySelector(".humidity-data");
 const weatherData = document.querySelector(".weather-data");
+const icon = document.querySelector("img");
 const windData = document.querySelector(".wind-data");
 console.log(url);
 
@@ -14,10 +15,14 @@ async function weatherTest() {
   let data = await response.json();
   console.log(data);
   stateName.textContent = `${data.name}`;
-  tempNow.textContent = `Temperate in Jammu Right Now : ${data.main.temp}`;
-  feelsLike.textContent = `Feels like : ${data.main.feels_like}`;
-  humidityData.textContent = `Humidity : ${data.main.humidity}%`;
-  weatherData.textContent = `Weather : ${data.weather[0].main}`;
-  windData.textContent = `Wind : ${data.wind.speed} km/h`;
+  tempNow.textContent = `${data.main.temp}° C`;
+  feelsLike.textContent = `${data.main.feels_like}° C`;
+  humidityData.textContent = `${data.main.humidity}%`;
+  weatherData.textContent = `${data.weather[0].main}`;
+  windData.textContent = `${data.wind.speed} km/h`;
+  icon.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
+  );
 }
 weatherTest();

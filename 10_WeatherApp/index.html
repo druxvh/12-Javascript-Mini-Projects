@@ -14,11 +14,23 @@
     ></script>
   </head>
   <body>
-    <h1 class="state-name"></h1>
-    <p class="temp"></p>
-    <p class="feels-like"></p>
-    <p class="humidity-data"></p>
-    <p class="weather-data"></p>
-    <p class="wind-data"></p>
+    <div class="container">
+      <div class="top-wrap">
+        <p class="state-name"></p>
+        <div class="icon-wrap"></div>
+        <img src="" alt="icon data" />
+      </div>
+      <p class="temp"></p>
+      <div class="row">
+        <div class="col">
+          <p>Feels Like : <span class="feels-like"></span></p>
+          <p>Weather : <span class="weather-data"></span></p>
+        </div>
+        <div class="col">
+          <p>Humidity : <span class="humidity-data"></span></p>
+          <p>Wind : <span class="wind-data"></span></p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
