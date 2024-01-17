@@ -11,7 +11,7 @@ body {
   align-items: center;
   flex-direction: column;
 }
-span {
+.stopwatch {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 4rem;
 }
