@@ -8,14 +8,14 @@ const generateJoke = async () => {
         let response = await fetch(url)
         let data = await response.json()
         jokeText.textContent = data.joke
-        if(data.joke){
+        if (data.joke) {
             jokeText.textContent = data.joke
-        } else if (data.setup){
+        } else if (data.setup) {
             jokeText.innerHTML = `${data.setup} <br />  <br /> ${data.delivery}`
         }
         console.log(data)
 
-        
+
     } catch (error) {
         console.error(error)
     }

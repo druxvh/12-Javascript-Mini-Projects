@@ -3,23 +3,27 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   height: 100vh;
-  background-color: #abff1a;
+  background-color: #edf1e6;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
 .stopwatch {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 4rem;
 }
+
 .btn-wrap {
   margin-top: 2rem;
   display: flex;
   gap: 1rem;
 }
+
 button {
   padding: 0.75rem 1.75rem;
   background-color: #111;

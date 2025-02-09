@@ -1,33 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Password Validator</title>
-    <link
-      rel="stylesheet"
-      href="/30-Javascript-Mini-Projects/12_Password-Validator/style.css"
-    />
-    <script
-      src="/30-Javascript-Mini-Projects/12_Password-Validator/script.js"
-      defer
-    ></script>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Register</h1>
-      <input type="email" placeholder="Your E-mail" id="email" required />
-      <input type="password" placeholder="Enter Password" id="pwd" required />
-      <button id="submit">Submit</button>
-      <div class="requirements">
-        <p id="char-length" class="invalid">At least 8 characters long</p>
-        <p id="number" class="invalid">At least 1 number (0-9)</p>
-        <p id="lowercase" class="invalid">At least 1 lowercase letter (a-z)</p>
-        <p id="uppercase" class="invalid">At least 1 uppercase letter (A-Z)</p>
-        <p id="character" class="invalid">
-          At least 1 special character (!,@,#...)
-        </p>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Validator</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Register</h1>
+    <input type="email" placeholder="Your E-mail" id="email" required />
+    <input type="password" placeholder="Enter Password" id="pwd" required />
+    <button id="submit">Submit</button>
+    <div class="requirements">
+      <p id="char-length" class="invalid">At least 8 characters long</p>
+      <p id="number" class="invalid">At least 1 number (0-9)</p>
+      <p id="lowercase" class="invalid">At least 1 lowercase letter (a-z)</p>
+      <p id="uppercase" class="invalid">At least 1 uppercase letter (A-Z)</p>
+      <p id="character" class="invalid">
+        At least 1 special character (!,@,#...)
+      </p>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

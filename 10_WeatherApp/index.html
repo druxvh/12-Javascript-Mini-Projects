@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather App</title>
-    <link
-      rel="stylesheet"
-      href="/30-Javascript-Mini-Projects/10_WeatherApp/style.css"
-    />
-    <script
-      src="/30-Javascript-Mini-Projects/10_WeatherApp/app.js"
-      defer
-    ></script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="top-wrap">
-        <p class="state-name"></p>
-        <div class="icon-wrap"></div>
-        <img src="" alt="icon data" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="top-wrap">
+      <p class="state-name"></p>
+      <div class="icon-wrap"></div>
+      <img src="" alt="icon data" />
+    </div>
+    <p class="temp"></p>
+    <div class="row">
+      <div class="col">
+        <p>Feels Like : <span class="feels-like"></span></p>
+        <p>Weather : <span class="weather-data"></span></p>
       </div>
-      <p class="temp"></p>
-      <div class="row">
-        <div class="col">
-          <p>Feels Like : <span class="feels-like"></span></p>
-          <p>Weather : <span class="weather-data"></span></p>
-        </div>
-        <div class="col">
-          <p>Humidity : <span class="humidity-data"></span></p>
-          <p>Wind : <span class="wind-data"></span></p>
-        </div>
+      <div class="col">
+        <p>Humidity : <span class="humidity-data"></span></p>
+        <p>Wind : <span class="wind-data"></span></p>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

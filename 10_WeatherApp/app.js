@@ -8,7 +8,6 @@ const humidityData = document.querySelector(".humidity-data");
 const weatherData = document.querySelector(".weather-data");
 const icon = document.querySelector("img");
 const windData = document.querySelector(".wind-data");
-console.log(url);
 
 async function weatherTest() {
   let response = await fetch(url);

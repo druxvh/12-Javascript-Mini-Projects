@@ -4,6 +4,12 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+body {
+  max-width: 1280px;
+  margin: auto;
+}
+
 .content-wrap {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -23,9 +29,10 @@ article {
   padding: 0.75rem;
   border-radius: 14px;
 }
+
 article h1 {
-    margin: 1rem 0;
-    font-size: 2rem;
+  margin: 1rem 0;
+  font-size: 2rem;
 }
 
 aside {
@@ -33,17 +40,17 @@ aside {
   border-radius: 14px;
   background-color: #fbfea5;
 }
+
 p {
-    margin: 1rem 0;
-}
-    
-button {
-    padding: .5rem .75rem;
-    margin-right: 1rem;
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
-    background-color: #111;
-    color: #f1f1f1;
+  margin: 1rem 0;
 }
 
+button {
+  padding: .5rem .75rem;
+  margin-right: 1rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background-color: #111;
+  color: #f1f1f1;
+}

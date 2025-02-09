@@ -4,16 +4,12 @@ const paragraphs = document.querySelectorAll("p")
 const heading = document.querySelector("h1")
 const aside = document.querySelector("aside")
 let defaultMode;
-console.log(mode)
-console.log(article)
-console.log(paragraphs)
-console.log(heading)
 
 let darkmode = () => {
     mode.textContent = "Dark Mode"
     mode.style.backgroundColor = "#f1f1f1"
     mode.style.color = "#111111"
-    paragraphs.forEach((para)=>{
+    paragraphs.forEach((para) => {
         para.style.color = "#f1f1f1"
     })
     heading.style.color = "#f1f1f1"
@@ -21,12 +17,12 @@ let darkmode = () => {
     article.style.backgroundColor = "#202020"
     aside.style.backgroundColor = "#202020"
     defaultMode = false
-} 
+}
 let lightmode = () => {
     mode.textContent = "Light Mode"
     mode.style.backgroundColor = "#111111"
     mode.style.color = "#f1f1f1"
-    paragraphs.forEach((para)=>{
+    paragraphs.forEach((para) => {
         para.style.color = "#111111"
     })
     heading.style.color = "#111111"
@@ -37,11 +33,11 @@ let lightmode = () => {
 }
 lightmode()
 
-mode.addEventListener("click", ()=>{
-    if(defaultMode){
+mode.addEventListener("click", () => {
+    if (defaultMode) {
         darkmode()
         defaultMode = false
-    } else{
+    } else {
         lightmode()
     }
 })
