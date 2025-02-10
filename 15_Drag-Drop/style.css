@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: #020008;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#left-box,
+#right-box {
+  width: 300px;
+  min-height: 400px;
+  margin: 20px;
+  border: 2px dashed #fff;
+}
+
+.list {
+  background: #f14141;
+  height: 60px;
+  margin: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  cursor: grab;
+}
