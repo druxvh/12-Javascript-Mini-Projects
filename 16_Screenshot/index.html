@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Take a Screenshot</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+
+    <!-- HTML2Canvas -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+      integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <div class="container-wrapper">
+        <div class="first-container">
+          <h1>A Screenshot taker</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+            itaque vitae aspernatur perspiciatis assumenda quod odit aperiam
+            unde doloremque ipsam?
+          </p>
+          <img src="image.png" alt="an image" />
+        </div>
+        <div class="second-container hide"></div>
+      </div>
+      <div class="btn-wrap">
+        <button class="screenshot-btn">Take a Screenshot</button>
+        <a href="" class="download-btn hide">Download</a>
+      </div>
+    </main>
+  </body>
+</html>
