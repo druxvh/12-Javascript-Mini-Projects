@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="main">
+      <div id="timer"></div>
+      <div class="container">
+        <div id="textDisplay" class="text-display">
+          <p></p>
+        </div>
+        <textarea
+          placeholder="start typing to start..."
+          id="textInput"
+          class="text-input"
+          autofocus
+        ></textarea>
+      </div>
+    </main>
+    <div id="modal" class="modal hide">
+      Your typing speed is <span class="modal-text"></span>
+      <button>Play Again</button>
+    </div>
+  </body>
+</html>
